@@ -2,13 +2,9 @@
 
 ## This is my repository for Project3
 
-Dice.py will simulate the dice rolls and save the outcome in a file.
+project3.py will simulate the dice rolls, fit and estimate the MLE parameter \mu and then generates different plots to visualize the uncertainty of our estimation.
 
-1) Run `Dice.py`. This gives plots for the outcomes from the biased dice and the distribution of number of sixes rolled by fair dice for different number of tosses and experiments. To run this program, type in: 
-  `python3 Dice.py -seed <seed_number> -trial_b <number of trial of biased dice> -trial_n <number of experiment for fair dice> `
+  `python3 project3.py -p6 0.3 -trial_b 250  -trial_n 10 -prob1 0.7`
+
+
   
- 
-
-Neymann.py will be used to estimate the parameter and its confidence interval.
-
-Neymann.py can be run from terminal. It doesn't require additional commands.
