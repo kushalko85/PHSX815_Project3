@@ -2,7 +2,7 @@
 import sys
 import numpy as np
 import pandas as pd
-##from Random import Random
+#from Random import Random
 import seaborn as sns
 import matplotlib.pyplot as plt
 import csv
@@ -74,9 +74,9 @@ for line_list in rolls_dist_100:
 
 
 # writing array in the file 
-f = open("biased_dice.txt", "w")
-np.savetxt(f,roll_dist_int)
-f.close()
+#f = open("biased_dice.txt", "w")
+#np.savetxt(f,roll_dist_int)
+#f.close()
 
 # making a dict and setting counter for each number as 0 and looping and adding # count
 counter = {1:0,2:0,3:0,4:0,5:0,6:0}
@@ -131,9 +131,9 @@ plt.show()
         
 
 #write unfair output of trials in a file 
-g = open("ufair_dice.txt", "w")
-np.savetxt(g,rolls_dist_100)
-g.close()
+#g = open("ufair_dice.txt", "w")
+#np.savetxt(g,rolls_dist_100)
+#g.close()
 
 
 file_test=open("ufair_dice.txt","r")
@@ -164,12 +164,12 @@ for line in Lines:
 #print(six_count)
     
 # Writing count in a file with header
-with open("ufair_dice_counter.txt","w") as ufair_counter_file:
-    w = csv.writer(ufair_counter_file)
-    w.writerow(["line_number", "six_count"])
-    for key, val in ufair_dice_table.items():
-        w.writerow([key, val])
-    ufair_counter_file.close()
+#with open("ufair_dice_counter.txt","w") as ufair_counter_file:
+    #w = csv.writer(ufair_counter_file)
+    #w.writerow(["line_number", "six_count"])
+    #for key, val in ufair_dice_table.items():
+        #w.writerow([key, val])
+    #ufair_counter_file.close()
 
 
 
